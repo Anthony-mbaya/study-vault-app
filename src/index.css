@@ -140,10 +140,10 @@ body{
     @apply flex justify-between px-5 py-6 fixed w-fit gap-5 bg-green-950 rounded-2xl shadow-2xl
 }
 .sendQs{
-    @apply flex justify-end p-3 gap-3 mt-50
+    @apply flex justify-end p-3 gap-3 
 }
 .sendQs > textarea{
-    @apply px-2 py-3 outline-none text-black font-semibold text-lg rounded-lg w-[50%]
+    @apply px-2 py-3 outline-none text-black font-semibold text-lg rounded-lg w-[50%] mt-50
 }
 .getRes{
     @apply px-2 py-3 bg-slate-800 rounded-lg shadow-2xl 
