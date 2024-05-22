@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-[#054bb4] text-white
+}
+/*header.jsx file*/
+.title{
+    @apply text-xl md:text-2xl font-bold shadow-2xl text-black mx-auto w-full
+}
+.logo{
+    @apply h-16 md:h-20 mx-auto w-full 
+} 
+.header-cont{
+    @apply flex justify-between h-36 max-w-[1240] mx-auto 
+}
+.header-logo{
+    @apply mx-6 block p-2 
+}
+.header-list{
+    @apply md:flex justify-around py-6 hidden w-[45%]
+}
+.header-list > li{
+    @apply p-2 font-light text-xs md:text-[1em] sm:text-sm mx-auto my-auto hover:bg-blue-400 rounded-md break-words
+}
+.side-list{
+    @apply fixed top-2 left-1 block md:hidden h-fit w-fit  bg-slate-800 rounded-lg 
+}
+.side-list > li{
+    @apply  rounded-md px-4 py-4 hover:bg-blue-400
+}
+.side-list > li > .link{
+    @apply hover:underline 
+}
+.menu-icons{
+    @apply block md:hidden fixed top-10 right-14 px-4 py-2 rounded-lg hover:bg-blue-400 shadow-lg bg-blue-600
+}
+/*text.js*/
+.text-cont{
+    @apply w-full h-[90vh] mx-auto py-40 px-10 text-center 
+}
+.text-1 > p{
+    @apply text-2xl md:text-4xl font-bold
+}
+.react-typed{
+    @apply text-slate-800
+}
+.text-2 > h2{
+    @apply text-xl md:text-2xl text-orange-600 my-3
+}
+.text-button{
+    @apply bg-orange-500 px-3 py-2 rounded-xl shadow-2xl bottom-5 mt-8
+}
+/*footer.jsx*/
+.footer-cont{
+    @apply w-full h-[100vh]
+}
+.info-boxes{
+    @apply mx-auto px-4 w-full grid grid-cols-3 md:grid-cols-3 gap-5 items-center
+}
+.info-boxes > div{
+    @apply border-2 px-4 py-2 rounded-xl shadow-2xl bg-white text-blue-600 
+}
+.info-boxes > .box2{
+    @apply py-5
+}
+.info-boxes > .box3{
+    @apply py-5
+}
+.info-boxes > div > h2{
+    @apply text-2xl md:text-3xl font-bold
+}
+.info-boxes > div > p{
+    @apply text-sm md:text-lg
+}
+.footer-images{
+    @apply w-full border-4 px-10 mt-16
+}
+.graduation-img{
+    @apply float-left w-[40%] p-5 md:w-[60%] flex justify-between gap-3 flex-wrap md:flex-nowrap rounded-2xl shadow-2xl
+}
+.books-img{
+    @apply float-right w-[40%] p-5 md:pt-16 md:w-[60%] flex justify-between gap-3 flex-wrap md:flex-nowrap rounded-2xl shadow-2xl
+}
+.books-img > img{
+    @apply float-right
+}
+
+.paper-img{
+    @apply float-left w-[40%] p-5 md:w-[60%] mt-16 flex justify-between gap-3 flex-wrap md:flex-nowrap rounded-2xl shadow-2xl
+}
+/*login.jsx*/
+.login-form{
+    @apply bg-blue-500 mt-36 flex flex-col w-[40%] md:w-[25%] gap-4 items-center h-[50vh] rounded-2xl shadow-2xl mx-auto py-10
+}
+.login-form > h1,.signup-form > h1,.profile-form > h1{
+    @apply text-2xl font-bold
+}
+.login-form > input,.signup-form > input,.profile-form > input{
+    @apply rounded-lg w-[80%] px-4 py-2 text-black font-semibold outline-none
+}
+.login-form > button,.signup-form > button,.profile-form > button{
+    @apply bg-green-600 rounded-xl px-4 py-2 hover:bg-blue-400 hover:text-blue-600
+}
+.login-form > p,.signup-form > p{
+    @apply text-sm 
+}
+.login-form > h3,.signup-form > h3{
+    @apply bg-red-600 px-3 py-2 rounded-xl hover:bg-opacity-70
+}
+.signup-btn,.login-btn{
+    @apply p-2 underline rounded-xl
+}
+/*signup.jsx*/
+.signup-form{
+    @apply bg-blue-500 flex flex-col gap-4 w-[40%] md:w-[25%] mx-auto my-36  items-center h-[60vh] rounded-2xl shadow-2xl py-10
+}
+/*profile.jsx*/  
+.home-btn{
+    @apply w-fit p-2 
+}
+.profile-form{
+    @apply bg-blue-500 mt-36 flex flex-col w-[40%] md:w-[25%] gap-4 items-center h-[57vh] rounded-2xl shadow-2xl mx-auto 
+}
+.prof-info{
+    @apply bg-blue-300 mt-36 flex flex-col gap-3 w-fit mx-auto rounded-2xl shadow-2xl h-[50vh] px-20
+}
+.prof-info > p{
+    @apply text-lg text-black
+}
+.prof-info > button{
+    @apply bg-green-600 rounded-xl px-4 py-2 hover:bg-blue-400 hover:text-blue-600
+}
+/*chat-rev.jsx*/
+.chat-cont{
+    @apply w-[85%] mx-auto h-[95vh] mt-5 overflow-visible px-2 py-3
+}
+.header-btns{
+    @apply flex justify-between px-5 py-6 fixed w-fit gap-5 bg-green-950 rounded-2xl shadow-2xl
+}
+.sendQs{
+    @apply flex justify-end p-3 gap-3 
+}
+.sendQs > textarea{
+    @apply px-2 py-3 outline-none text-black font-semibold text-lg rounded-lg w-[50%]
+}
+.getRes{
+    @apply px-2 py-3 bg-slate-800 rounded-lg shadow-2xl 
+}
+.getRes > p{
+    @apply font-semibold
+}
+.getRes > p > span{
+    @apply text-red-500
+}
+.getRes > span{
+    @apply text-red-500
+}
+/*pdf.jsx*/
+.pdf-cont{
+    @apply md:container mx-auto px-5 py-7 
+}
+.pdfHomeBtn{
+    @apply w-8 h-8
+}
+.viewBtn{
+    @apply border-2 w-full bg-gradient-to-b from-slate-900 via-blue-950 to-green-950 py-5 font-semibold text-lg rounded-full
+}
+.pdf-disp{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+}
+.single-pdf{
+    @apply w-fit flex flex-col gap-4 p-4 items-center my-auto mx-auto
+}
+.single-pdf > h2{
+    @apply font-bold font-serif
+}
+.doc{
+    @apply w-fit rounded-xl
+}
+.pag{
+    @apply rounded-xl hover:opacity-90 shadow-2xl
+}
+.pdf-btns{
+    @apply px-2 py-3 flex flex-row gap-2
+}
+.pdf-btns > button{
+    @apply px-3 py-2 rounded-2xl shadow-2xl bg-gradient-to-tr from-blue-900 via-black to-white hover:opacity-70
+}
+.cart-disp{
+    @apply p-4
+}
+.cart-disp > h1{
+    @apply text-xl font-extrabold underline
+}
+.cart-item{
+    @apply md:mx-auto py-3 px-2 flex md:flex-row md:justify-between flex-col gap-3 w-[70%] 
+}
+.cart-item > h3{
+    @apply font-semibold font-sans text-sm md:text-lg
+}
+.cart-item > button{
+    @apply w-fit bg-gradient-to-r from-red-800 via-red-600 to-red-400 px-5 py-2 rounded-2xl hover:font-extrabold text-sm md:text-lg
+}
+.cost{
+    @apply text-black font-extrabold text-2xl md:mx-20
+}
+.pages-cont{
+    @apply md:max-w-full max-w-4xl h-[93vh] mt-4 overflow-auto
+}
+.pdf-doc{
+    @apply mx-auto w-fit 
+}
+.pdf-page{
+    @apply h-fit w-fit mx-auto
+}
+.close{
+    @apply fixed top-0 left-[50%] p-1 bg-red-600 rounded-lg
+}
+.prev{
+    @apply fixed top-[50%] left-2 md:left-52 z-50
+}
+.next{
+    @apply fixed top-[50%] right-10 md:right-64 
+}
+.back-icon{
+    @apply h-10 w-10 bg-red-600 rounded-full
+}
+.next-icon{
+    @apply h-10 w-10 bg-red-600 rounded-full
+}
+.closep-icon{
+    @apply h-7 w-7
+}
