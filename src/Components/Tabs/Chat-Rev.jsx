@@ -53,8 +53,7 @@ export const ChatRev = () => {
         <Link to="/past-papers">
           <FontAwesomeIcon icon={faClipboard} /> Papers
         </Link>
-      </h1>
-       
+      </h1> 
       <div className="sendQs">
       <textarea 
         type="text"
@@ -77,7 +76,7 @@ export const ChatRev = () => {
           <p><span>Answer</span>: {ans.text}</p>
           <span>{ans.timestamp.toLocaleString()}</span>
           </div>
-          <hr className="mt-4 mb-4" />
+          <hr className="mt-2" />
           <div className="sendQs">
           <textarea
         type="text"

@@ -1,7 +1,8 @@
 import React from "react";
 import graduate from "../Images/download3.png";
 import books from "../Images/download1.jpg";
-import paper from "../Images/download2.png";
+import paper from "../Images/download2.png";  
+import { FaWhatsappSquare,FaTwitter,FaFacebookSquare } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -49,6 +50,48 @@ export const Footer = () => {
         
         </div>
         
+      </div>
+      <hr />
+      <div className="web-info-cont">
+      <div className="web-info">
+        <h1>Study Vault</h1>
+        <ul>
+          <li>Our Website</li>
+          <li>Graduates</li>
+          <li>Books</li>
+          <li>PDFs</li>
+        </ul>
+      </div>
+
+      <div className="web-info">
+        <h1>Supporters</h1>
+        <ul>
+          <li>Havard</li>
+          <li>IBM</li>
+          <li>Coi</li>
+          <li>KQ</li>
+        </ul>
+      </div>
+
+      <div className="web-info">
+        <h1>Contact</h1>
+        <ul>
+          <li className="underline"><a href="mailto:hhh@gmail.com">hhh@gmail.com</a></li>
+          <li><FaWhatsappSquare size={20} /></li>
+          <li><FaTwitter size={20} /></li>
+          <li><FaFacebookSquare size={20} /></li>
+        </ul>
+      </div>
+
+      <div className="web-info">
+        <h1>Study Vault</h1>
+        <ul>
+          <li>Our Website</li>
+          <li>Graduates</li>
+          <li>Books</li>
+          <li>PDFs</li>
+        </ul>
+      </div>
       </div>
     </div>
   );

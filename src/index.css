@@ -7,7 +7,7 @@ body{
 }
 /*header.jsx file*/
 .title{
-    @apply text-xl md:text-2xl font-bold shadow-2xl text-black mx-auto w-full
+    @apply text-xl md:text-2xl font-bold shadow-2xl bg-white text-black mx-auto w-full px-2 py-2 rounded-xl
 }
 .logo{
     @apply h-16 md:h-20 mx-auto w-full 
@@ -16,7 +16,7 @@ body{
     @apply flex justify-between h-36 max-w-[1240] mx-auto 
 }
 .header-logo{
-    @apply mx-6 block p-2 
+    @apply mx-6 p-2 
 }
 .header-list{
     @apply md:flex justify-around py-6 hidden w-[45%]
@@ -34,11 +34,11 @@ body{
     @apply hover:underline 
 }
 .menu-icons{
-    @apply block md:hidden fixed top-10 right-14 px-4 py-2 rounded-lg hover:bg-blue-400 shadow-lg bg-blue-600
+    @apply block md:hidden fixed top-10 right-14 px-4 py-2 rounded-lg hover:bg-blue-400 shadow-lg bg-slate-900
 }
 /*text.js*/
 .text-cont{
-    @apply w-full md:h-[90vh] mx-auto py-20 md:py-40 px-10 text-center 
+    @apply w-full h-[82vh] md:h-[90vh] mx-auto py-14 md:py-40 px-10 text-center 
 }
 .text-1 > p{
     @apply text-2xl md:text-4xl font-bold
@@ -75,16 +75,16 @@ body{
     @apply text-sm md:text-lg
 }
 .footer-images{
-    @apply grid grid-cols-1 p-3 gap-4
+    @apply grid grid-cols-1 p-3 gap-4 
 }
 .footer-images > div{
-    @apply flex justify-between gap-3 px-3 py-4 bg-blue-950 shadow-2xl rounded-2xl
+    @apply flex justify-between gap-3 px-3 py-4 bg-blue-950 shadow-2xl rounded-2xl mx-auto
 }
 .graduation-img{
     @apply  rounded-md md:w-[50%]
 }
 .books-img{
-    @apply  rounded-sm 
+    @apply  rounded-sm md:w-[50%] 
 }
 .books-img > img{
     @apply rounded-sm 
@@ -101,6 +101,15 @@ body{
 }
 .paper-image{
     @apply object-fill h-40 w-32 md:h-64 md:w-56
+}
+.web-info-cont{
+    @apply bg-black grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 justify-around mt-5 mb-5 py-5
+}
+.web-info{
+    @apply mx-auto
+}
+.web-info > h1{
+    @apply text-white text-lg md:text-xl underline font-bold
 }
 /*login.jsx*/
 .login-form{
@@ -161,16 +170,16 @@ body{
 }
 /*chat-rev.jsx*/
 .chat-cont{
-    @apply w-[85%] mx-auto h-[95vh] mt-5 overflow-visible px-2 py-3
+    @apply w-[85%] mx-auto h-[95vh] mt-5 overflow-visible  
 }
 .header-btns{
     @apply flex justify-between px-3 py-4 md:px-5 md:py-6 text-sm md:text-lg  fixed w-fit gap-5 bg-green-950 rounded-2xl shadow-2xl
 }
 .sendQs{
-    @apply flex justify-end p-3 gap-3 
+    @apply flex justify-end py-3 gap-3 pt-16
 }
 .sendQs > textarea{
-    @apply px-2 py-3 outline-none text-black font-semibold md:text-lg rounded-lg md:w-[50%] w-full mt-14
+    @apply px-2 py-3 outline-none text-black font-semibold md:text-lg rounded-lg md:w-[50%] w-full 
 }
 .getRes{
     @apply px-2 py-3 bg-slate-800 rounded-lg shadow-2xl 
@@ -232,6 +241,27 @@ body{
 }
 .cost{
     @apply text-black font-extrabold text-2xl md:mx-20
+}
+.payment-ways{
+    @apply mt-5
+}
+.payment-list{
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center
+}
+.payment-list > button{
+    @apply py-5 rounded-3xl shadow-2xl font-bold md:text-lg
+}
+.mpesa{
+    @apply bg-green-600
+}
+.kcb{
+    @apply bg-gradient-to-r from-green-300 via-green-600 to-white
+}
+.paypal{
+    @apply bg-blue-700
+}
+.voucher{
+    @apply bg-gradient-to-l from-slate-600 via-orange-600 to-purple-600
 }
 .pages-cont{
     @apply md:max-w-full max-w-4xl h-[93vh] mt-4 overflow-auto

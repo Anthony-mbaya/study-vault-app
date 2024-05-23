@@ -120,6 +120,14 @@ export const PDFs = () => {
             </ul>
           )}
           <h2 className="cost">Cost: {pdfCost()} KES</h2>
+          <div className="payment-ways"> 
+            <div className="payment-list">
+              <button className="mpesa">MPESA</button>
+              <button className="kcb">KCB</button>
+              <button className="paypal">PAYPAL</button>
+              <button className="voucher">VOUCHER</button>
+              </div> 
+          </div>
         </div>
       )}
       </div>

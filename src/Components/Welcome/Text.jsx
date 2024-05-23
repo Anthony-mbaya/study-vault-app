@@ -6,9 +6,11 @@ export const Text =()=>{
     return(
         <div className='text-cont'>
         <div className='text-1'>
-             <p>Welcome to <strong>STUDY~VAULT</strong>, platform designed to help university students 
+             <p>Welcome to <strong>STUDY~VAULT</strong></p> <p>Platform designed to help university students 
              with easy access to collection of study 
              resources:
+             </p>
+             <p>
              <ReactTyped strings={['PDFs','Past Papers','Chat-Rev']} className='react-typed'  typeSpeed={120} backSpeed={140} loop /> 
              </p>
         </div>
