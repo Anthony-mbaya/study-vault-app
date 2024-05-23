@@ -34,24 +34,18 @@ export const Footer = () => {
         <div className="graduation-img">
         <img src={graduate} alt="study images" className="grad-img" />
           <p>Graduation is the formal completion of an academic program, where
-             students receive a diploma or degree as recognition of their achievement. 
-             It often involves a ceremonial event marking the transition from student to graduate,
-              celebrating their academic accomplishments.</p>
+             students receive a diploma or degree as recognition of their achievement.  </p>
         
         </div>
         <div className="books-img">
           <p>Books are a great way to learn and expand your knowledge. They can provide a 
-            wealth of information on a variety of topics.Books are comprehensive works that
-             explore subjects in depth, often combining narrative, research, and analysis to 
-             provide a thorough understanding of a topic. </p>
+            wealth of information on a variety of topics.  </p>
         <img src={books} alt="study images" className="books-image" />
         </div>
         <div className="paper-img">
         <img src={paper} alt="study images" className="paper-image" />
           <p>Papers are a great way to express your thoughts and ideas. They can be used to communicate
-             information, share research, or simply express.Papers are concise documents that present 
-             research findings, theories, or arguments on specific topics, usually within academic or 
-             professional contexts. </p>
+             information, share research, or simply express.  </p>
         
         </div>
         
