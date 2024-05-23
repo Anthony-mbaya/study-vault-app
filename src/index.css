@@ -96,6 +96,12 @@ body{
 .grad-img{
     @apply object-fill h-40 w-32 md:h-64 md:w-56
 }
+.books-image{
+    @apply object-fill h-40 w-32 md:h-64 md:w-56
+}
+.paper-image{
+    @apply object-fill h-40 w-32 md:h-64 md:w-56
+}
 /*login.jsx*/
 .login-form{
     @apply bg-gradient-to-tr from-slate-700 via-blue-600 to-white mt-36 flex flex-col w-[80%] sm:w-[40%] md:w-[35%] lg:w-[25%] gap-4 items-center h-[50vh] rounded-2xl shadow-2xl mx-auto py-10
