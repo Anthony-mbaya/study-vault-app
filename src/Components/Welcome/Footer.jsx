@@ -41,13 +41,18 @@ export const Footer = () => {
         </div>
         <div className="books-img">
           <p>Books are a great way to learn and expand your knowledge. They can provide a 
-            wealth of information on a variety of topics.</p>
+            wealth of information on a variety of topics.Books are comprehensive works that
+             explore subjects in depth, often combining narrative, research, and analysis to 
+             provide a thorough understanding of a topic. </p>
         <img src={books} alt="study images" />
         </div>
         <div className="paper-img">
-          <p>Papers are a great way to express your thoughts and ideas. They can be used to communicate
-             information, share research, or simply express.</p>
         <img src={paper} alt="study images" />
+          <p>Papers are a great way to express your thoughts and ideas. They can be used to communicate
+             information, share research, or simply express.Papers are concise documents that present 
+             research findings, theories, or arguments on specific topics, usually within academic or 
+             professional contexts. </p>
+        
         </div>
         
       </div>

@@ -30,6 +30,16 @@ export const Profile = () => {
   const editFun = () => {
     setEdit(true);
   };
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setProf(prevProfile => ({ ...prevProfile, image: reader.result }));
+      };
+      reader.readAsDataURL(file);
+    }
+  };
   return (
     <div>
       {edit ? (
@@ -38,6 +48,7 @@ export const Profile = () => {
             <FontAwesomeIcon icon={faHomeUser} className="home-btn" />
           </Link>
           <h1>~Create Your Profile~</h1>
+          <input type="file" accept="image/*" onChange={handleImageChange}  />
 
           <input
             type="text"
@@ -108,6 +119,8 @@ export const Profile = () => {
             <p>
               Year: <p>{prof.year}</p>
             </p>
+            <hr />
+            <img src={prof.image} alt="profile photo" className="prof-photo" />
             <hr />
           </div>
           </div>
