@@ -92,7 +92,7 @@ body{
 }
 /*login.jsx*/
 .login-form{
-    @apply bg-blue-500 mt-36 flex flex-col w-[40%] md:w-[25%] gap-4 items-center h-[50vh] rounded-2xl shadow-2xl mx-auto py-10
+    @apply bg-gradient-to-tr from-slate-700 via-blue-600 to-white mt-36 flex flex-col w-[60%] sm:w-[40%] md:w-[35%] lg:w-[25%] gap-4 items-center h-[50vh] rounded-2xl shadow-2xl mx-auto py-10
 }
 .login-form > h1,.signup-form > h1,.profile-form > h1{
     @apply text-2xl font-bold
@@ -114,21 +114,33 @@ body{
 }
 /*signup.jsx*/
 .signup-form{
-    @apply bg-blue-500 flex flex-col gap-4 w-[40%] md:w-[25%] mx-auto my-36  items-center h-[60vh] rounded-2xl shadow-2xl py-10
+    @apply bg-gradient-to-tr from-slate-700 via-blue-600 to-white flex flex-col gap-4 w-[60%] sm:w-[40%] md:w-[35%] lg:w-[25%] mx-auto my-36  items-center h-[60vh] rounded-2xl shadow-2xl py-10
 }
 /*profile.jsx*/  
 .home-btn{
-    @apply w-fit p-2 
+    @apply w-10 h-10 pt-2 text-white
 }
 .profile-form{
-    @apply bg-blue-500 mt-36 flex flex-col w-[40%] md:w-[25%] gap-4 items-center h-[57vh] rounded-2xl shadow-2xl mx-auto 
+    @apply bg-gradient-to-tr from-blue-500 via-slate-600 to-blue-950 w-[90%] sm:w-[80%] md:w-[30%] mx-auto mt-10 h-[80vh] flex flex-col gap-4 items-center text-lg rounded-2xl shadow-2xl
 }
 .prof-info{
-    @apply bg-blue-300 mt-36 flex flex-col gap-3 w-fit mx-auto rounded-2xl shadow-2xl h-[50vh] px-20
+    @apply bg-gradient-to-tr from-blue-500 via-slate-600 to-blue-950 flex flex-col gap-5 h-[80vh] mt-10 w-[90%] sm:w-[80%] md:w-[50%] mx-auto p-3 rounded-xl shadow-2xl
 }
-.prof-info > p{
-    @apply text-lg text-black
+.all-prof{
+    @apply flex flex-row mx-auto h-[80%] w-full
 }
+.prof-details{
+    @apply p-5 w-[50%]
+}
+.profile-name{
+    @apply bg-gradient-to-bl from-blue-600 via-black to-green-900 px-2 py-10 font-bold text-3xl rounded-xl break-words
+}
+.profile-email{
+    @apply border-4 border-b-transparent border-blue-950 text-lg p-2 mt-4 h-fit break-words
+}
+.school-details{
+    @apply p-5 w-[50%] text-lg font-semibold
+} 
 .prof-info > button{
     @apply bg-green-600 rounded-xl px-4 py-2 hover:bg-blue-400 hover:text-blue-600
 }
@@ -137,13 +149,13 @@ body{
     @apply w-[85%] mx-auto h-[95vh] mt-5 overflow-visible px-2 py-3
 }
 .header-btns{
-    @apply flex justify-between px-5 py-6 fixed w-fit gap-5 bg-green-950 rounded-2xl shadow-2xl
+    @apply flex justify-between px-3 py-4 md:px-5 md:py-6 text-sm md:text-lg  fixed w-fit gap-5 bg-green-950 rounded-2xl shadow-2xl
 }
 .sendQs{
     @apply flex justify-end p-3 gap-3 
 }
 .sendQs > textarea{
-    @apply px-2 py-3 outline-none text-black font-semibold text-lg rounded-lg w-[50%] mt-50
+    @apply px-2 py-3 outline-none text-black font-semibold md:text-lg rounded-lg md:w-[50%] w-full mt-14
 }
 .getRes{
     @apply px-2 py-3 bg-slate-800 rounded-lg shadow-2xl 
