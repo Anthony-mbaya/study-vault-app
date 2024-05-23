@@ -111,6 +111,9 @@ body{
 .web-info > h1{
     @apply text-white text-lg md:text-xl underline font-bold
 }
+.cont-icon{
+    @apply h-5 md:h-6 md:w-6
+}
 /*login.jsx*/
 .login-form{
     @apply bg-gradient-to-tr from-slate-700 via-blue-600 to-white mt-36 flex flex-col w-[80%] sm:w-[40%] md:w-[35%] lg:w-[25%] gap-4 items-center h-[50vh] rounded-2xl shadow-2xl mx-auto py-10
